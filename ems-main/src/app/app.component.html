@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Employee Details</h2>
+<div class="Add employee">
+
+  
+
+<form action="/ViewEmployee_page">
+  <label for="fname">First name :</label><br>
+  <input type="text" id="fname" name="fname" value=""><br><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value=""><br><br>
+  <label for="EmpID">Identity Number:</label><br>
+  <input type="number" id="EmpID" name="EmpID" value="null"><br><br>
+  <label for="emailaddress">Email Address:</label><br>
+  <input type="text" id="emailaddress" name="emailaddress"> <br>
+
+  <p><i>Choose your gender:</i></p>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br><br>
+
+  <p><i>Select a department</i></p>
+  <input type="radio" id="IT" value="IT">
+  <label for="IT">IT</label>
+  <input type="radio" id="Finance" value="finance">
+  <label for="Finance">Finance</label>
+  <input type="radio" id="Sales" value="Sales">
+  <label for="Sales">Sales</label><br><br>
+
+  
+    
+  
+   
+<button onclick="myFunction()">Add Employee</button> <br>
+    <div id="add">Employee added successfully...</div>
+<script>
+    function myFunction(){
+        var add = documents.getElementsById("add");
+        add.className = "show";
+        setTimeout(function(){add.className = add.className.replace("show","");},4000);
+    }
+</script>
+
+
+  <!-- <button type="Submit" value="Submit">Add Employee</button> <br> -->
+
+  <button type="cancel" value="cancel">Cancel</button>
+  
+</form> 
+</div>
+
+
+</body>
+</html>
